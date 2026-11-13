@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportar Rescate - Sistema de Rescate Animal</title>
+</head>
+<body>
+
+    <header>
+        <h1>Sistema de Control de Rescate y Adopción Animal</h1>
+        <p>Refugio Huellas de Esperanza</p>
+    </header>
+
+    <nav aria-label="Menú principal">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="reportar.html">Reportar rescate</a></li>
+            <li><a href="rescates.html">Casos registrados</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>Registrar un nuevo animal rescatado</h2>
+
+            <p>
+                Complete el siguiente formulario con los datos
+                del animal encontrado.
+            </p>
+
+            <form action="#" method="post">
+
+                <fieldset>
+                    <legend>Información del animal</legend>
+
+                    <p>
+                        <label for="nombre">
+                            Título del caso o nombre provisional:
+                        </label>
+                        <br>
+                        <input type="text" id="nombre"
+                        name="nombre" required>
+                    </p>
+
+                    <p>
+                        <label for="categoria">
+                            Categoría del animal:
+                        </label>
+                        <br>
+                        <select id="categoria" name="categoria" required>
+                            <option value="">Seleccione una categoría</option>
+                            <option value="perros">Perros</option>
+                            <option value="gatos">Gatos</option>
+                            <option value="fauna-silvestre">Fauna Silvestre</option>
+                        </select>
+                    </p>
+
+                    <fieldset>
+                        <legend>Nivel de urgencia médica</legend>
+
+                        <p>
+                            <input type="radio" id="alta"
+                            name="urgencia" value="Alta" required>
+                            <label for="alta">Alta</label>
+                        </p>
+
+                        <p>
+                            <input type="radio" id="media"
+                            name="urgencia" value="Media">
+                            <label for="media">Media</label>
+                        </p>
+
+                        <p>
+                            <input type="radio" id="baja"
+                            name="urgencia" value="Baja">
+                            <label for="baja">Baja</label>
+                        </p>
+                    </fieldset>
+
+                    <p>
+                        <label for="descripcion">
+                            Descripción del estado en que se encontró:
+                        </label>
+                        <br>
+                        <textarea id="descripcion"
+                        name="descripcion" rows="6" cols="45"
+                        required></textarea>
+                    </p>
+
+                    <p>
+                        <label for="fecha">
+                            Fecha del rescate:
+                        </label>
+                        <br>
+                        <input type="date" id="fecha" name="fecha">
+                    </p>
+
+                    <p>
+                        <label for="lugar">
+                            Lugar donde fue encontrado:
+                        </label>
+                        <br>
+                        <input type="text" id="lugar" name="lugar">
+                    </p>
+
+                </fieldset>
+
+                <p>
+                    <button type="submit">Registrar animal</button>
+                    <button type="reset">Limpiar formulario</button>
+                </p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Contacto: refugio@huellasdeesperanza.org</p>
+        <p>© 2026 Sistema de Rescate y Adopción Animal</p>
+    </footer>
+
+</body>
+</html>
